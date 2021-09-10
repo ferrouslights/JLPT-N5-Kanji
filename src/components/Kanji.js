@@ -1,17 +1,9 @@
 import React from "react";
-import Card from "./Card.style";
-import styled from "styled-components";
+import CardStyle from "./Card.style";
+import Card from "./Card";
+import KanjiContainer from "./KanjiContainer.style";
 
-const CardStyle = styled.section`
-    height: 200px;
-    width: 200px;
-    border-radius: 25px;
-    padding: 15px:
-    margin: 5px;
-    background: papayawhip;
-    flex: 1;
-    text-align: center;
-    `
+
 
 const Kanji = () => {
     const kanjiList = [
@@ -45,10 +37,16 @@ const Kanji = () => {
         kunReading: 'とし',
         meaning: 'Year (counter)',
         },
+        {id: 5,
+            character: '年',
+            onReading: 'ねん',
+            kunReading: 'とし',
+            meaning: 'Year (counter)',
+            }
         
         ]
     return (
-        <div>
+        <KanjiContainer>
             {kanjiList.map((kanji) =>
             <CardStyle className='item'>
                 <Card
@@ -61,7 +59,7 @@ const Kanji = () => {
                     />
             </CardStyle>
             )}
-        </div>
+        </KanjiContainer>
     )
 }
 
