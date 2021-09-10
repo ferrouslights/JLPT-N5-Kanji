@@ -113,19 +113,19 @@ const Kanji = () => {
         character: '分',
         onReading: 'ブン、フン、ブ',
         kunReading: 'わ',
-        meaning: 'Month, Moon',
+        meaning: 'Part, Minute of Time, Understand',
         },
         {id: 18,
         character: '後',
         onReading: 'ゴ、コウ',
         kunReading: 'のち、うし、あと',
-        meaning: 'Month, Moon',
+        meaning: 'Behind, Back, Later',
         },
         {id: 19,
         character: '前',
         onReading: 'ゼン',
         kunReading: 'まえ',
-        meaning: 'Month, Moon',
+        meaning: 'In Front, Before',
         }
         
         ]
