@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+View it live at https://quizzical-wozniak-b7456f.netlify.app
+
 This is a simple ui for showing the recommended Kanji to study for the JLPT N5 exam
 
 This project uses styled components for styling and vanilla react for the rest.
