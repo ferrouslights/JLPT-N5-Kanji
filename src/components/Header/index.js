@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HeaderContainer, HeaderLogo, HeaderToggle, Nav } from './Header.style'
+import { HeaderContainer, HeaderLogo, HeaderToggle, Nav, JapanDot, NavItem } from './Header.style'
 
 const Header = () => {
     const [flashcard, setFlashcard] = useState(false)
@@ -11,12 +11,14 @@ const Header = () => {
     return (
         <Nav>
             <HeaderContainer>
-                <HeaderLogo>
-                    JLPT N5 Kanji 🥷
-                </HeaderLogo>
-                <HeaderToggle onClick={() => toggleFlashcard()}>
-                    {flashcard ? 'Grid View' : 'Flashcard View'}
-                </HeaderToggle>
+                    <HeaderLogo>
+                        N5 Kanji Ninja 🥷
+                    </HeaderLogo>
+                    {/* Might Add this in later */}
+                    {/* <JapanDot /> */}
+                    <HeaderToggle onClick={() => toggleFlashcard()}>
+                        {flashcard ? 'Grid View' : 'Flashcard View'}
+                    </HeaderToggle>
                 {/* <HeaderShuffle onClick={() => toggleFlashcard()}>
                     Shuffle
                 </HeaderShuffle> */}

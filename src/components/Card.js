@@ -1,5 +1,5 @@
 import React from "react";
-import { Character, CardWrapper } from "./Card.style";
+import { Character, CardWrapper, Text } from "./Card.style";
 
 const Card = (props) => {
     return (
@@ -7,8 +7,9 @@ const Card = (props) => {
             <Character>
                 {props.character}
             </Character>
-            <p>{props.onReading} | {props.kunReading}</p>
-            <p>{props.meaning}</p>
+            {/* <Text>On | Kun</Text> */}
+            <Text>{props.onReading} | {props.kunReading}</Text>
+            <Text>{props.meaning}</Text>
         </CardWrapper>
     )
 }
