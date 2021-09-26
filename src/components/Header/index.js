@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { HeaderContainer, HeaderLogo, HeaderToggle, Nav, JapanDot, NavItem } from './Header.style'
+import { HeaderContainer, HeaderLogo, HeaderToggle, Nav } from './Header.style'
 
 const Header = () => {
     const [flashcard, setFlashcard] = useState(false)
