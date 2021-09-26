@@ -1,8 +1,8 @@
 import React from "react";
-import CardStyle from "./Card.style";
 import Card from "./Card";
 import KanjiContainer from "./KanjiContainer.style";
 import { kanjiList } from "./KanjiList";
+import { CardStyle } from "./Card.style";
 
 
 

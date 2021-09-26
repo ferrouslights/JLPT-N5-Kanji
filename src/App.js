@@ -1,14 +1,16 @@
 import './App.css';
-import Header from './components/Header.style';
+import Header from './components/Header';
 import Kanji from './components/Kanji';
 import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <Wrapper>
+    <div>
       <Header />
+      <Wrapper>
         <Kanji />
-    </Wrapper>
+      </Wrapper>
+    </div>
   );
 }
 

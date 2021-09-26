@@ -1,15 +1,15 @@
 import React from "react";
-import Character from "./Character.style";
+import { Character, CardWrapper } from "./Card.style";
 
 const Card = (props) => {
     return (
-        <div>
+        <CardWrapper>
             <Character>
                 {props.character}
             </Character>
             <p>{props.onReading} | {props.kunReading}</p>
             <p>{props.meaning}</p>
-        </div>
+        </CardWrapper>
     )
 }
 
