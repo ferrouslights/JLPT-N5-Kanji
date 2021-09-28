@@ -6,7 +6,7 @@ import { CardStyle } from "./Card.style";
 
 
 
-const Kanji = () => {
+const Kanji = ({toggleFlashcard, flashcardState}) => {
     return (
         <KanjiContainer>
             {kanjiList.map((kanji) =>
@@ -17,6 +17,7 @@ const Kanji = () => {
                     onReading={kanji.onReading}
                     kunReading={kanji.kunReading}
                     meaning={kanji.meaning}
+                    flashcardState={flashcardState}
                     />
             </CardStyle>
             )}

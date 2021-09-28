@@ -1,12 +1,6 @@
-import React, {useState} from 'react'
 import { HeaderContainer, HeaderLogo, HeaderToggle, Nav } from './Header.style'
 
-const Header = () => {
-    const [flashcard, setFlashcard] = useState(false)
-
-    const toggleFlashcard = () => {
-        setFlashcard(!flashcard)
-    }
+const Header = ({toggleFlashcard, flashcardState}) => {
 
     return (
         <Nav>
@@ -17,7 +11,7 @@ const Header = () => {
                     {/* Might Add this in later */}
                     {/* <JapanDot /> */}
                     <HeaderToggle onClick={() => toggleFlashcard()}>
-                        {flashcard ? 'Grid View' : 'Flashcard View'}
+                        {flashcardState ? 'Hide Info' : 'View Info'}
                     </HeaderToggle>
                 {/* <HeaderShuffle onClick={() => toggleFlashcard()}>
                     Shuffle
