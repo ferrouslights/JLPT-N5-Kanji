@@ -14,6 +14,7 @@ export const CardStyle = styled.div`
     margin: auto;
     background: white;
     transition: transform .5s;
+    
 
     &:hover {
         transition: transform .25s;
