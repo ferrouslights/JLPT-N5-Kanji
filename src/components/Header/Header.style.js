@@ -74,9 +74,11 @@ export const HeaderToggle = styled.button`
     @media (hover: hover) {
         &:hover {
             transition: all 0.2s ease-in-out;
-            background: #DF957C;
-            color: #011827;
+            background: #fff;
+            color: #BC002D;
             transform: scale(1.1);
+            border: solid 2px #BC002D;
+
         }
     }
 

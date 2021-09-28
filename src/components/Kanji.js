@@ -10,9 +10,8 @@ const Kanji = () => {
     return (
         <KanjiContainer>
             {kanjiList.map((kanji) =>
-            <CardStyle className='item'>
+            <CardStyle className='item' key={kanji.id}>
                 <Card
-                    key={kanji.id}
                     id={kanji.id}
                     character={kanji.character} 
                     onReading={kanji.onReading}
