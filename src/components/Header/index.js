@@ -11,7 +11,7 @@ const Header = ({toggleFlashcard, flashcardState}) => {
                     {/* Might Add this in later */}
                     {/* <JapanDot /> */}
                     <HeaderToggle onClick={() => toggleFlashcard()}>
-                        {flashcardState ? 'Hide Info' : 'View Info'}
+                        {flashcardState ? 'Hide Info' : 'Show Info'}
                     </HeaderToggle>
                 {/* <HeaderShuffle onClick={() => toggleFlashcard()}>
                     Shuffle
